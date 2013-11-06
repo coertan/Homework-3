@@ -199,6 +199,12 @@ h3{
 	margin-left: 70px;
 	list-style-type: none;
 }
+
+.template-vegetarian, .template-meat{
+	display: none;
+}
+
+
 .navbar-brand{
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 44px;
@@ -234,12 +240,12 @@ h3{
 
 }
 
-.test4{
+.pizza-left{
 	float: left;
 	padding-left: 20px;
 }
-.test5{
-	padding-right: 20px;
+.pizza-right{
+	padding-right: 40px;
 	float: right;
 }
 
