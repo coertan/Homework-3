@@ -1,0 +1,361 @@
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+@import url(http://fonts.googleapis.com/css?family=Ranchers);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+
+body{
+	background-image: url(../img/19.jpg);
+	background-repeat: repeat;
+	background-size: 100%
+}
+
+
+
+.video{
+	margin: 0 auto;	
+	display: block;
+	width: 420px;
+	height: 315px;
+} 
+
+.content-box{
+	width: 60%;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 35px; 
+	box-shadow: 4px 4px 12px #555;
+}
+
+.content-main{
+	min-width: 300px;
+	min-height: 500px;
+}
+
+.content-main-home{
+	min-width: 300px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/pizza1.jpg);
+	min-height: 500px;
+}
+
+
+header{
+	background-color: #A36FCB;
+}
+
+.head{
+	width: 100%;
+}
+
+
+.pizza-image{
+	width:50%;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+}
+.image-center{
+	width: 95%;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.discreetlink, .discreetlink:hover{
+	color: #000;
+}
+
+.discreetlink:link, 
+.discreetlink:visited{
+	text-decoration: none;
+}
+
+.discreetlink2{
+	color: #5A2484;
+}
+
+.discreetlink2:link, 
+.discreetlink2:visited{
+	text-decoration: none;
+}
+.name{
+	font-family: 'Gloria Hallelujah', cursive;
+	text-align: center;
+	font-size: 48px;
+}
+.motto{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(255,255,255,0.7);
+
+}
+.address{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	    background-color: rgba(255,255,255,0.7);
+
+}
+
+.pull-right{
+	float:right;
+	margin: 10px;
+	padding: 10px;
+	width: 40%;
+}
+
+p{
+	margin: 10px;
+	padding: 10px;
+}
+
+
+li a{
+	display: inline-block;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+
+footer{
+	clear: both;
+	background-color: #A36FCB;
+	margin-bottom: 20px;
+}
+
+.navbar{
+	background-color: #2B0349;
+	width: 100%;	
+	border: none;
+	border-radius: 0px;
+	box-shadow: 0px 0px 0px;
+}
+
+.foot{
+	text-align: center;
+	font-family: 'Ranchers', cursive;
+
+}
+
+.aboutus{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 24px;
+	text-align: left;
+	margin: 15px ;
+}
+h1{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 34px;
+	text-align: center;
+	font-weight: bold;
+	margin: 15px ;
+}
+
+h2{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 24px;
+	text-align: left;
+	font-weight: bold;
+	margin: 15px ;
+}
+
+h3{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 26px;
+	text-align: left;
+	margin: 5px;
+	margin-left: 30px;
+}
+
+.obvious{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 24px;
+	text-align: left;
+	margin: 5px;
+	margin-left: 15px;
+	color: #5A2484;
+}
+
+
+.menu1{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 20px;
+	text-align: left;
+	margin: 5px;
+	margin-left: 50px;
+	list-style-type: square;
+}
+
+.menu2{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 20px;
+	text-align: left;
+	margin: 5px;
+	margin-left: 70px;
+	list-style-type: none;
+}
+.navbar-brand{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 44px;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1000px){
+	h3{
+		font-size: 16px;
+	}
+	.menu1{
+		font-size: 14px;
+		margin-left: 0px;
+	}
+	.menu2{
+		font-size: 14px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.motto{
+		font-size: 14px;
+	}
+
+
+
+}
+
+.test4{
+	float: left;
+	padding-left: 20px;
+}
+.test5{
+	padding-right: 20px;
+	float: right;
+}
+
+
+
+
+
+
+.overlay-caption {
+    position: relative;
+}
+
+.overlay-caption img {
+    width: 60%;
+}
+
+.overlay-caption figcaption {
+    font-weight: 300;
+    text-align: center;
+    background-color: rgba(255,255,255,0.7);
+    width: 50%;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    padding: 5px;
+   
+}
+
+@media screen and (max-width: 767px) {
+
+	.video{
+		display: none;
+	}
+	iframe{
+		display: none;
+	}
+    .image-center{
+    	display: none;
+    }
+    .content-box{
+    	width: 320px;
+    }
+    .footer1{
+    	display: none;
+	}
+	.footer2{
+		font-size: 20px;
+	}
+	.foot{
+		margin: 0px;
+		padding: 0px;
+	}
+	.rowsetting{
+		width: 90%;
+	}
+
+    .menu1{
+    	font-size: 16px;
+    }
+    .menu2{
+    	font-size: 16px;
+    }
+    h3{
+    	font-size: 18px;
+    }
+    .test4{
+    	width: 100%;
+    	float: none;
+    	margin-left: 0px;
+    	margin-right: 10px;
+    }
+    .test5{
+    	width: 100%;
+    	float: none;
+    	margin-left: 0px;
+    	margin-right: 10px;
+    }
+
+    .pull-right{
+    	display: none;
+    }
+    .pull-left{
+    	display: none;
+    }
+    .pizza-image{
+    	display: none;
+    }
+    .content-main, .content-main-home{
+    	background-image: none;
+    	min-width: 0px;
+    	min-height: 0px;
+    }
+    .motto{
+    	background-color: rgba(255,255,255,1);
+
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-centered .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+    .navbar-centered .navbar-nav > li {
+        float: none;
+    }
+    .navbar-centered .nav > li {
+        display: inline;
+    }
+    .navbar-centered .nav > li > a {
+        display: inline-block;
+    }
+    .navbar-brand{
+    	display: none;
+    }
+    .footer2{
+    	display: none;
+    }
+} 
