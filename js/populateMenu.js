@@ -1,47 +1,12 @@
 /*  populateMenu.js
-    
+    This javascript file will load the menu data for dawg pizza from the
+    menu.js file and use it to populate the menu page with items
 */
 
 
 
-
-/* sortObjArray()
-    sorts an array of objects by a given property name
-    the property values are compared using standard 
-    operators, so this will work for string, numeric,
-    boolean, or date values
-
-    objArray        array of objects to sort
-    propName        property name to sort by
-
-    returns undefined (array is sorted in place)
-*/
-function sortObjArray(objArray, propName) {
-    if (!objArray.sort)
-        throw new Error('The objArray parameter does not seem to be an array (no sort method)');
-
-    //sort the array supplying a custom compare function
-    objArray.sort(function(a,b) {
-        
-        //note: this compares only one property of the objects
-        //see the optional step where you can add support for 
-        //a secondary sort key (i.e., sort by another property)
-        //if the first property values are equal
-        if (a[propName] < b[propName])
-            return -1;
-        else if (a[propName] === b[propName])
-            return 0;
-        else
-            return 1;
-    });
-} //sortObjArray()
-
-
-
-
+//this function will run on document load, and render all 3 categories of menu items
 $( function(){
-   // sortObjArray(com.dawgpizza.menu, 'name');
-
     renderPizza(com.dawgpizza.menu.pizzas);
     renderDrink(com.dawgpizza.menu.drinks);
     renderDessert(com.dawgpizza.menu.desserts);
@@ -49,6 +14,11 @@ $( function(){
 });
 
 
+
+//this function will render all the pizza menu items
+//because a pizza can be meat or vegetarian, the script
+//will check which the current pizza is and load it into the
+//appropriate box
 function renderPizza(entries) {
     
     //our 2 templates
@@ -66,6 +36,8 @@ function renderPizza(entries) {
     meatPizza.hide();
     meatPizza.empty();
 
+    //for each pizza, figure out if it's meat or veggie, and then load it
+    //into the appropriate template
     $.each(entries, function(){
         if(this.vegetarian){  //vegetarian pizza
             instance  = templateVeggie.clone();
@@ -88,45 +60,8 @@ function renderPizza(entries) {
     veggiePizza.fadeIn();
 }
 
-function renderPizza(entries) {
-    
-    //our 2 templates
-    var templateMeat = $('.template-meat');
-    var templateVeggie = $('.template-vegetarian');
 
-    //our 4 containers
-    var meatPizza = $('.meatpizza');
-    var veggiePizza = $('.veggiepizza');
-
-    var instance;
-
-    veggiePizza.hide();
-    veggiePizza.empty();
-    meatPizza.hide();
-    meatPizza.empty();
-
-    $.each(entries, function(){
-        if(this.vegetarian){  //vegetarian pizza
-            instance  = templateVeggie.clone();
-            instance.find('.name').html(this.name);
-            instance.find('.desc').html(this.description);
-            instance.find('.price').html('$' + this.prices[0] + '/ $' +this.prices[1] + '/ $' + this.prices[2]);
-            instance.removeClass('template-vegetarian');
-            veggiePizza.append(instance);
-        }else{
-            instance  = templateMeat.clone();
-            instance.find('.name').html(this.name);
-            instance.find('.desc').html(this.description);
-            instance.find('.price').html('$' + this.prices[0] + '/ $' +this.prices[1] + '/ $' + this.prices[2]);
-            instance.removeClass('template-meat');
-            meatPizza.append(instance);
-        }
-
-    });
-    meatPizza.fadeIn();
-    veggiePizza.fadeIn();
-}
-
+//this function will populate the drinks part of the menu
 function renderDrink(entries) {
     
     //our 2 templates
@@ -148,6 +83,9 @@ function renderDrink(entries) {
     });
     drinks.fadeIn();
 }
+
+
+//this function will populate the desserts part of the menu
 function renderDessert(entries) {
     
     //our 2 templates
